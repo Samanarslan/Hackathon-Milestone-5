@@ -1,0 +1,147 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-heading {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Styling */
+#input-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.form-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+#input-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+#input-form input[type="text"],
+#input-form input[type="email"],
+#input-form input[type="tel"],
+#input-form input[type="file"],
+#input-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #7bd4eb;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#input-form input:focus,
+#input-form textarea:focus {
+    border-color: #007acc;
+    outline: none;
+}
+
+/* Resume Styling */
+#resume {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #007acc;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid #ddd;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 1.2rem;
+    color: #007acc;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+section p,
+section ul {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}

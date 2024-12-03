@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-heading">Shareable Resume Builder<br>
+        By<br>
+    Saman Arslan</h1>
+    
+    <!-- User Input Form -->
+    <div id="input-form">
+        <h2 class="form-heading">Enter Your Details</h2>
+        
+        <label>Name:
+            <input type="text" id="name-input" placeholder="Your Full Name">
+        </label>
+        <label>Email:
+            <input type="email" id="email-input" placeholder="Your Email Address">
+        </label>
+        <label>Phone:
+            <input type="tel" id="phone-input" placeholder="Your Phone Number">
+        </label>
+        <label>Profile Picture:
+            <input type="file" id="image-input" accept="image/*">
+        </label>
+        <label>Professional Summary:
+            <textarea id="summary-input" placeholder="A brief description of your professional background"></textarea>
+
+         <!-- Education Section -->
+        <div id="education-section">
+            <label>Education (comma-separated):
+                <input type="text" id="education-input" placeholder="Certificate, Diploma, Degree">
+            </label>
+            <button id="update-skills-btn">Update Education</button>
+        </div>   
+        
+        <!-- Experience Section -->
+        <div id="experience-section">
+            <label>Job Title:
+                <input type="text" id="job-title-input" placeholder="Your Job Title">
+            </label>
+            <label>Company Name:
+                <input type="text" id="company-input" placeholder="Company Name">
+            </label>
+            <button id="update-experience-btn">Update Experience</button>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills-section">
+            <label>Skills (comma-separated):
+                <input type="text" id="skills-input" placeholder="E.g., JavaScript, CSS, HTML">
+            </label>
+            <button id="update-skills-btn">Update Skills</button>
+        </div>
+        <div><button type="submit"><b>Generate Resume</b></button>
+        </div>
+
+        <b>
+    
+    <!-- Dynamic and Editable Resume -->
+    <div id="resume-display" contenteditable="true">
+        <!-- Resume will be generate below -->
+    </div>
+    <!-- Section for the shareable link and download option -->
+     <div id="shareable-link-container" style="display: none,">
+      <h2>Shareable Link</h2>
+      <p>Here is your unique link to view or edit your resume:</p>
+      <a href="#" id="shareable-link" target="_blank"></a>
+      <br>
+      <button id="download-pdf"><b>Download as PDF</b></button>
+     </div>
+     <script src="script.js"></script>
+    </div>
+    </body>
+</html>
+    
+     
+                
